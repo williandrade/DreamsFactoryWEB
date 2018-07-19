@@ -1,0 +1,42 @@
+<section class="mb-26">
+  <header class="text-center">
+    <h1 class="mat-display-1">Discovery your new PROJECT</h1>
+  </header>
+  <article class="container head-line-row">
+    <app-main-idea-card *ngFor="let idea of topIdeas" [title]="idea.title" [text]="idea.text" [actions]="idea.actions" [likes]="idea.likes"></app-main-idea-card>
+  </article>
+  <footer style="margin-top: 30px">
+    <div class="text-center">
+      <button mat-fab class="stripped color-black">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </footer>
+</section>
+<section class="green-bg p-26 mb-26">
+  <header class="text-center text-white">
+    <h1 class="mat-display-1">IT’S TIME TO SHARE</h1>
+  </header>
+  <article class="light-font text-white">
+    <p>
+      Who never did a job that is repetitive and/or mechanical and had the thought about "Imagine if exist a system that could
+      do it for me, where I could put XYZ and I got ZYX", or maybe had a dream about a game and thought, someone could do
+      it.
+    </p>
+    <p>
+      The thing is! All around the world people have brilliant ideas, but most part of that never see the light of the day. We
+      Also have a lot of professionals around the world that have free time and would like to be part of something bigger
+      than a project for his aunt.
+    </p>
+    <p>
+      What are you waiting to join this community?
+    </p>
+  </article>
+  <footer class="text-center">
+    <button mat-raised-button class="mb-26">SHARE YOUR IDEA</button>
+    <br>
+    <button mat-raised-button>SEARCH FOR A PROJECT</button>
+  </footer>
+</section>
+<section class="p-26">
+</section>

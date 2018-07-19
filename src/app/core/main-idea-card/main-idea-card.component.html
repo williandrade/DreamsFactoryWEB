@@ -1,0 +1,23 @@
+<div class="home-card-container">
+  <div class="default-container home-card">
+    <div class="default-container-top">
+      <span>
+        {{title? title: 'NO NAME YET'}}
+      </span>
+      <span class="spacer"></span>
+      <span>
+        <mat-icon class="heart">favorite</mat-icon>
+        <br>
+        <span class="counter">{{likes? likes: 0}}</span>
+      </span>
+    </div>
+    <div class="default-container-body">
+      <p>
+        {{text}}
+      </p>
+    </div>
+    <div class="default-container-bottom">
+      <button mat-raised-button *ngFor="let action of actions" (click)="action.func()">{{action.name}}</button>
+    </div>
+  </div>
+</div>

@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/dreams-factory-theme.scss",
               "src/styles.less"
             ],
             "scripts": []
